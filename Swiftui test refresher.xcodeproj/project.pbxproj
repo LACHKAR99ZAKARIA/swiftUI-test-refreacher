@@ -14,6 +14,7 @@
 		01B0B2672C3BEA230088001C /* Swiftui_test_refresherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0B2662C3BEA230088001C /* Swiftui_test_refresherTests.swift */; };
 		01B0B2712C3BEA230088001C /* Swiftui_test_refresherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0B2702C3BEA230088001C /* Swiftui_test_refresherUITests.swift */; };
 		01B0B2732C3BEA230088001C /* Swiftui_test_refresherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0B2722C3BEA230088001C /* Swiftui_test_refresherUITestsLaunchTests.swift */; };
+		01B0B2812C3BEA5B0088001C /* Refresher in Frameworks */ = {isa = PBXBuildFile; productRef = 01B0B2802C3BEA5B0088001C /* Refresher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B0B2812C3BEA5B0088001C /* Refresher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = "Swiftui test refresher";
+			packageProductDependencies = (
+				01B0B2802C3BEA5B0088001C /* Refresher */,
+			);
 			productName = "Swiftui test refresher";
 			productReference = 01B0B2522C3BEA210088001C /* Swiftui test refresher.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 01B0B2492C3BEA200088001C;
+			packageReferences = (
+				01B0B27F2C3BEA5B0088001C /* XCRemoteSwiftPackageReference "SwiftUI-Refresher" */,
+			);
 			productRefGroup = 01B0B2532C3BEA210088001C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -582,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01B0B27F2C3BEA5B0088001C /* XCRemoteSwiftPackageReference "SwiftUI-Refresher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gh123man/SwiftUI-Refresher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01B0B2802C3BEA5B0088001C /* Refresher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01B0B27F2C3BEA5B0088001C /* XCRemoteSwiftPackageReference "SwiftUI-Refresher" */;
+			productName = Refresher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01B0B24A2C3BEA200088001C /* Project object */;
 }
